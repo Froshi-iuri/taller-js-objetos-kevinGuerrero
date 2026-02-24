@@ -75,3 +75,13 @@ console.log(objCar(carro));
 carro.propietario.edad = 25
 console.log(carro.propietario.edad);
 
+//Exercise number twelve
+function destructuring (persona){
+    let {nombre, profesion} = persona;
+    console.log(`${nombre} es ${profesion}`) //Se hizo en función porque la variable nombre ya habia sido creada antes.
+}
+destructuring(persona);
+
+//Exercise number thirteen
+let {marca, modelo} = carro;
+console.log(`Froshi no tiene un carro ${marca} con modelo ${modelo} :(`)

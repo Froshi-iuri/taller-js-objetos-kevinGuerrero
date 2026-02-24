@@ -61,3 +61,9 @@ Ejercicio número 11:
 2. la diferencia es que modificar es trabajar sobre el mismo o objeto mientras que copiar es crear un clon de ese objeto con los mismo valores en una parte de la memoria diferente a la original, por ejemplo, en una pintura, modificar una pintura seria agregarle detalles, borrarle cosas encima de la misma pintura y copiarla seria dibujar exactamente la misma pintura sin perder ni un detalle, seria el mismo dibujo pero en diferente lienzo
 
 Ejercicio número 12
+
+1. la destructuración es la forma en sacar las propiedades de los objetos con esos mismos nombres, basicamente, los desempaca.
+
+2. es una forma limpia de trabajar, acortas codigo y facilita el trabajo
+
+Ejercicio número 13

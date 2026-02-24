@@ -76,12 +76,71 @@ carro.propietario.edad = 25
 console.log(carro.propietario.edad);
 
 //Exercise number twelve
-function destructuring (persona){
-    let {nombre, profesion} = persona;
-    console.log(`${nombre} es ${profesion}`) //Se hizo en función porque la variable nombre ya habia sido creada antes.
-}
-destructuring(persona);
+let {nombre: personaNombre, profesion: personaProfesion} = persona;
+console.log(`${personaNombre} es ${personaProfesion}`)
 
 //Exercise number thirteen
 let {marca, modelo} = carro;
 console.log(`Froshi no tiene un carro ${marca} con modelo ${modelo} :(`)
+
+//Exercise number fourteen
+let {propietario: {nombre: propietarioNombre, edad: propietarioEdad}} = carro;
+console.log(`El propietario ${propietarioNombre} tiene ${propietarioEdad} años`);
+
+//Exercise number fifteen
+
+function nameOld ({nombre, edad}){
+    console.log(`Holaaa ${nombre}, tienes ${edad} años verdad?`)
+}
+
+nameOld(persona);
+
+//Exercise number sixteen
+
+function propietarioParametro({propietario = {nombre, edad}}){
+    console.log(`El propietario ${nombre} creo que tenía ${edad} años uwu`)
+}
+
+propietarioParametro(carro);
+
+//Exercise number seventeen
+
+let {nombre: nombrePersona, edad: edadPersona} = persona;
+
+console.log(`${nombrePersona} tiene ${edadPersona} años`)
+
+//Exercise number eighteen
+let personaDiferente = {...persona, edad: 27}
+console.log(`La persona ${persona.nombre} es una persona diferente, ahora tiene ${personaDiferente.edad} años, increible :0`);
+
+//Exercise number nineteen
+
+let objectTest = {
+    name: "Froshiiiiii",
+    msgFr: {
+        msg: "Froshi cambiará este mensaje"
+    }
+}
+let carroDiferente = { 
+    ...carro, 
+    propietario: { ...carro.propietario, edad: 30 } 
+};
+console.log(`El propietario ahora ya tiene ${carroDiferente.propietario.edad}, antes tenía ${carro.propietario.edad}`);
+
+//Exercise number twenty, finally end
+let book0 = {
+    titulo: "Fumetsu no anata e",
+    autor: {
+        nombreAutor: "Yoshitoki Oima",
+        edadAutor: 36
+    },
+    editorial: {
+        nombreEditorial: "Kodansha",
+        anioEditorial: 2016
+    }
+}
+function book1({titulo, autor: {nombreAutor, edadAutor}, editorial: {nombreEditorial, anioEditorial}}){
+    console.log(`El manga "${titulo}" fue escrito por ${nombreAutor} de ${edadAutor} años, y publicado por la editorial ${nombreEditorial} en el año ${anioEditorial}.`);
+}
+
+book1(book0);

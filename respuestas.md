@@ -39,7 +39,7 @@ Ejercicio número 6:
 
 Ejercicio número 7:
 
-1 && 2. Se envía el objeto completo para tener acceso completo a cada propiedad, si necesitamos algo simplemente lo llamamos del objeto, esto tiene una ventaja y la cual es que ayuda a tener una mayor flexibilidad y optimización en el código.
+1 & 2. Se envía el objeto completo para tener acceso completo a cada propiedad, si necesitamos algo simplemente lo llamamos del objeto, esto tiene una ventaja y la cual es que ayuda a tener una mayor flexibilidad y optimización en el código.
 
 Ejercicio número 8:
 
@@ -58,12 +58,60 @@ Ejercicio número 11:
 
 1. Se modifica mediante la notacion de puntos y al final colocandole un valor con el operador de asignación =, quedaria algo así: carro.propietario.edad = 25
 
-2. la diferencia es que modificar es trabajar sobre el mismo o objeto mientras que copiar es crear un clon de ese objeto con los mismo valores en una parte de la memoria diferente a la original, por ejemplo, en una pintura, modificar una pintura seria agregarle detalles, borrarle cosas encima de la misma pintura y copiarla seria dibujar exactamente la misma pintura sin perder ni un detalle, seria el mismo dibujo pero en diferente lienzo
+2. la diferencia es que modificar es trabajar sobre el mismo o objeto mientras que copiar es crear un clon de ese objeto con los mismo valores en una parte de la memoria diferente a la original, por ejemplo, en una pintura, modificar una pintura seria agregarle detalles, borrarle cosas encima de la misma pintura y copiarla seria dibujar exactamente la misma pintura sin perder ni un detalle, seria el mismo dibujo pero en diferente lienzo. para hacerlo sin spread podria usar el método Object.assign(), 
 
 Ejercicio número 12
 
 1. la destructuración es la forma en sacar las propiedades de los objetos con esos mismos nombres, basicamente, los desempaca.
 
-2. es una forma limpia de trabajar, acortas codigo y facilita el trabajo
+2. es una forma limpia de trabajar, acortas codigo y facilita el trabajo.
 
 Ejercicio número 13
+
+1. como JavaScript no encuentra el valor entonces le asigna undefined ya que no existe.
+
+2. no es necesario, se puede cambiar el nombre para evitar errores con variables ya definidas.
+
+Ejercicio número 14:
+
+1. Porque queremos entrar al objeto principal y luego entrar al objeto interno, que es lo que hace las llaves que están dentro de las otras llaves
+
+2. Significa extraer datos que ya están dentro de otros.
+
+Ejercicio número 15:
+
+1. Significa que desempaqueta todos los datos que le interesan, lo hace dentro de los paréntesis en la función.
+
+2. La ventaja que tiene es que te ayuda a leer el código mas fácil porque encuentras todos los datos que ingresan a la función al leer las primeras lineas de la función
+
+Ejercicio número 16:
+
+1. Porque ya se destructuró en los parámetros de la función, los puntos me ayudan a acceder a las propiedades de un objeto, y si ya lo destructuré antes entonces significa que los valores ya estan desempacados en variables distintas y no en una sola.
+
+2. Si no tiene esa propiedad, JavaScript le asigna el valor undefined
+
+Ejercicio número 17:
+
+sí, si le puedo dar un nuevo nombre a una propiedad.
+
+1. Es una caracteristica que me permite cambiarle el nombre de una propiedad de un objeto a una variable con un nombre distinto.
+
+2. Es util para que no haya conflicto con otras variables con el mismo nombre.
+
+Ejercicio número 18:
+
+1. Lo que hace el operador spread (...) es descomponer los elementos de un objeto dentro de otro, basicamente crea una copia.
+
+2. La copia es superficial, lo que hará que si modificas un valor de un objeto que está dentro de otro, se reflejará en la copia.
+
+Ejercicio número 19:
+
+1 & 2. El objeto interno también se debe copiar porque la copia que hace el spread (...) es superficial y no copia los datos que están dentro de otros datos, lo que hace es usar el mismo lugar de la memoria por lo que si modificas el original en esa parte, también se reflejará en la copia y viceversa.
+
+Ejercicio número 20:
+
+1. no es muy recomendable si se tiene muchos niveles, osea, un objeto dentro de otro que está dentro de otro y finalemente dentro de otro, entre más largo sea, más confuso se vuelve para otro programador haciendo confusa la lectura.
+
+2. cuando tengo que renombrar muchas variables y cuando la linea de codigo se vuelve muy larga.
+
+3. null o indefined son comunes que salgan debido a el olvido del nombre de las variables o nombres de la propiedad.

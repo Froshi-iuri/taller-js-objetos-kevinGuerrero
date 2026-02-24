@@ -13,4 +13,51 @@ Ejercicio número 2:
 
 2. return es una bandeja de salida que te entrega los datos
 
-3. si una función no tiene return entonces no tendrá una forma de entregar los datos 
+3. si una función no tiene return entonces no tendrá una forma de entregar los datos para usarlos después.
+
+Ejercicio número 3:
+
+1. los paraneámetros son los nombres que se les dan a las variables en los paréntesis de una función, por ejemplo, en: function saber (nombre, edad){}, los parámetros están dentro de los paréntesis, los cuales serían nombre y edad.
+
+2. los argumentos son los valores reales que se ingresan cuando uno llama una función, por ejemplo, cuando llamo la función con: saber ("Froshi", 23), lo que esta dentro de la llamada de la función, osea, "Froshi" y 23 serían los argumentos.
+
+3. la diferencia es que los parámetros son las variables que esperan recibir un valor mientras que los argumentos son los valores que recibe una función, estos valores se ingresan cuando uno llama la función.
+
+Ejercicio número 5 (no habia un cuarto ejercicio en el documento, después del tercer ejercicio salía ya el quinto):
+
+1. Un objeto es una estructura de datos que guarda varios tipos de datos, es prácticamente un contenedor que organiza varios datos bajo un solo nombre.
+
+2. Las propiedad son las caracteristicas de un objeto y se define como clave: valor.
+
+3. Se Puede acceder a una propiedad mediante el punto, por ejemplo, si mi objeto es persona = {nombre: "Froshi", edad: 21, profesion: "artista"}, puedo acceder a la propiedad con el punto de la siguiente forma: persona.nombre, o si quiero acceder de otra forma podriamos acceder mediante corchetes: persona["profesion"]
+
+Ejercicio número 6:
+
+1. se puede agregar con la notación de punto, por ejemplo, si quiero agregar la propiedad telefono: persona.telefono = "3013684012", si una propiedad no existe la agregará, si ya existe entonces la modificará, aparte de la notación de puntos hay otra forma de agregar una propiedad y es mediante corchetes: persona = ["telefono"] = "3013684012".
+
+2. Sí, se puede modificar una propiedad de el objeto declarado con const, por qué?, const tiene unas reglas, no permite reasignar variables aunque si permite la modificación de sus propiedades si es un objeto o un array, es como si tuvieras un mapa de una ciudad y la ciudad es un objeto, const no deja cambiar las direcciones de las casas pero si deja entrar a ellas y modificar sus cosas, como pintar la casa o mover sus muebles.
+
+Ejercicio número 7:
+
+1 && 2. Se envía el objeto completo para tener acceso completo a cada propiedad, si necesitamos algo simplemente lo llamamos del objeto, esto tiene una ventaja y la cual es que ayuda a tener una mayor flexibilidad y optimización en el código.
+
+Ejercicio número 8:
+
+Se accede mediante la notación de punto: estudiante.notas.matematicas o mediante corchete estudiante["notas"] ["matematicas"]
+
+Ejercicio número 9:
+No habian preguntas
+
+Ejercicio número 10:
+
+1. Si la propiedadad no existe no soltará error, mostrará undefined, aunque si está anidado, osea, si es carro.seguro.propietario y seguro no existe, soltará un error ya que se quedará buscando algo dentro de algo que no existe
+
+2. Es importante validar datos porque por lo regular, un dato mal validado hace que el programa se detenga por el error y no funcione
+
+Ejercicio número 11:
+
+1. Se modifica mediante la notacion de puntos y al final colocandole un valor con el operador de asignación =, quedaria algo así: carro.propietario.edad = 25
+
+2. la diferencia es que modificar es trabajar sobre el mismo o objeto mientras que copiar es crear un clon de ese objeto con los mismo valores en una parte de la memoria diferente a la original, por ejemplo, en una pintura, modificar una pintura seria agregarle detalles, borrarle cosas encima de la misma pintura y copiarla seria dibujar exactamente la misma pintura sin perder ni un detalle, seria el mismo dibujo pero en diferente lienzo
+
+Ejercicio número 12

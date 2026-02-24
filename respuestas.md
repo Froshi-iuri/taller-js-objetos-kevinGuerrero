@@ -13,4 +13,4 @@ Ejercicio número 2:
 
 2. return es una bandeja de salida que te entrega los datos
 
-3. si una función no tiene return entonces no tendrá una forma de entregar los datos
+3. si una función no tiene return entonces no tendrá una forma de entregar los datos 
